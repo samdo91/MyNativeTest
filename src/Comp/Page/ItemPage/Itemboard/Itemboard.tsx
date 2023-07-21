@@ -1,15 +1,14 @@
 import React from 'react';
+import {View, Text} from 'react-native';
 
 function Itemboard() {
   return (
-    <div>
-      <div>Itemboard</div>
-      <body>
-        <header>
-          <div> Itemboard</div>
-        </header>
-      </body>
-    </div>
+    <View>
+      <Text>Itemboard</Text>
+      <View>
+        <Text>Itemboard</Text>
+      </View>
+    </View>
   );
 }
 
