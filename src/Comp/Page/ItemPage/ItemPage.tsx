@@ -1,7 +1,15 @@
 import React from 'react';
+import {View, Text} from 'react-native';
 
 function ItemPage() {
-  return <div>ItemPage</div>;
+  return (
+    <View>
+      <Text>ItemPage</Text>
+      <View>
+        <Text>temPage</Text>
+      </View>
+    </View>
+  );
 }
 
 export default ItemPage;
