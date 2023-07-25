@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput} from 'react-native';
+import {View, Text, TextInput, StyleSheet} from 'react-native';
 
 function ItemPage() {
   const [item, setItem] = useState('');
@@ -7,11 +7,11 @@ function ItemPage() {
   return (
     <View>
       <Text>ItemPage</Text>
-      <View>
+      <View style={styles.container}>
         <Text>temPage</Text>
         <Text>{item}</Text>
         <TextInput
-          style={{borderWidth: 1, borderColor: 'black'}}
+          style={styles.input}
           value={item}
           onChangeText={text => {
             setItem(text);
@@ -21,5 +21,16 @@ function ItemPage() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+});
 
 export default ItemPage;
